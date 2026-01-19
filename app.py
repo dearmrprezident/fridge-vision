@@ -12,7 +12,7 @@ api_key = st.sidebar.text_input("Enter Gemini API Key", type="password")
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash')
 
     # 2. Image Input
     img_file = st.camera_input("Take a photo of your fridge or pantry")
